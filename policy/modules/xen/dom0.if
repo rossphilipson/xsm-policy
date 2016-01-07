@@ -73,6 +73,24 @@ interface(`dom0_event_src',`
 ')
 ########################################
 ## <summary>
+##	Allow dom0 to set vCPU affinity for
+##	the parameter domain.
+## </summary>
+## <param name="dst_type">
+##	<summary>
+##	Type of the destination domain.
+##	</summary>
+## </param>
+#
+interface(`dom0_set_vcpu_affinity',`
+	gen_require(`
+		type dom0_t;
+	')
+
+	allow dom0_t $1:domain { setaffinity };
+')
+########################################
+## <summary>
 ##	Allow the specified type to copy dom0 grants.
 ## </summary>
 ## <param name="type">
