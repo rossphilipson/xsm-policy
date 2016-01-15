@@ -73,7 +73,7 @@ interface(`dom0_event_src',`
 ')
 ########################################
 ## <summary>
-##	Allow dom0 to set vCPU affinity for
+##	Allow dom0 to set vCPU and node affinity for
 ##	the parameter domain.
 ## </summary>
 ## <param name="dst_type">
