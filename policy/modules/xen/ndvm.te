@@ -42,6 +42,7 @@ dom0_event_src(ndvm_t, dom0-ndvm_evchn_t)
 
 dom0_pt_guest(ndvm_t)
 dom0_send_v4v(ndvm_t)
+dom0_set_vcpu_affinity(ndvm_t)
 domio_map_write_mmu(ndvm_t)
 ioport_use_resource(ndvm_t)
 iomem_map_rw_mmu(ndvm_t)
